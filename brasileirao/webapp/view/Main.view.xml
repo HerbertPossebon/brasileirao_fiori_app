@@ -1,0 +1,70 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="brasileirao.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <ObjectHeader
+            title="Campeonato Brasileiro 2023 - FIoriNET"
+            number="9a"
+            numberUnit="Rodada"
+            id="objectHeader1"
+        ></ObjectHeader>
+        <!-- Barra de abas com ícones-->
+        <IconTabBar id="Icontabbar1">
+            <!-- Agregação - elementos que se repetem dentro de um elemento superior-->
+            <!-- Abas vão se repetir dentro da barra de abas-->
+           <items>
+                <IconTabFilter text="Classificação" 
+                               key="classificacao"
+                               icon="sap-icon://competitor">
+
+                    <Table id="tab1">
+                        <columns>
+                            <!-- Posicao -->
+                            <Column id="col1"><Text id="txt1" text="Posição"></Text>
+                            </Column>
+                            <Column id="col2"><Text id="txt2" text=""></Text>
+                            </Column>
+                            <Column id="col3"><Text id="txt3" text="Jogos"></Text>
+                            </Column>
+                           
+                        </columns>
+                        <!-- Linhas da tabela-->
+                        <ColumnListItem >
+                            <cells>
+                                <!-- 1o coluna - posicao-->
+                                <Text text="1"></Text>
+                                <!-- Escudo -->
+                                <Image 
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Botafogo_de_Futebol_e_Regatas_logo.svg/1200px-Botafogo_de_Futebol_e_Regatas_logo.svg.png"
+                            width="5%"
+                            ></Image>
+                            <!-- 1o coluna - posicao-->
+                            <Text text="9"></Text>
+                            </cells>
+                        </ColumnListItem >        
+                    </Table>    
+                </IconTabFilter>
+                <IconTabFilter   text="Partidas" 
+                            key="partidas"
+                            icon="sap-icon://soccer">
+
+                    <!-- Tabela -->
+                    <Table>
+                        <columns>
+                            <!-- Posicao -->
+                            <Column ><Text text="Posição"></Text>
+                            </Column>
+                        </columns>
+                        <!-- Linhas da tabela-->
+                        <ColumnListItem >
+                            <cells>
+                                <!-- 1o coluna - posicao-->
+                                <Text text="2"></Text>
+                            </cells>
+                        </ColumnListItem >        
+                    </Table>  
+                </IconTabFilter>
+           </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>
