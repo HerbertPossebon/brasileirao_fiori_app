@@ -17,16 +17,42 @@
                                key="classificacao"
                                icon="sap-icon://competitor">
 
-                    <Table id="tab1">
+                    <Table>
                         <columns>
                             <!-- Posicao -->
-                            <Column id="col1"><Text id="txt1" text="Posição"></Text>
+                            <Column><Text  text="Posição"></Text>
                             </Column>
-                            <Column id="col2"><Text id="txt2" text=""></Text>
+                            <!-- Escudo-->
+                            <Column><Text  text=""></Text>
                             </Column>
-                            <Column id="col3"><Text id="txt3" text="Jogos"></Text>
+                            <!-- Time -->
+                            <Column><Text  text="Time"></Text>
                             </Column>
-                           
+                            <!-- Pontos -->
+                            <Column><Text  text="Pontos"></Text>
+                            </Column>
+                            <!-- Partidas jogadas -->
+                            <Column><Text  text="PJ"></Text>
+                            </Column>
+                            <!-- Vitórias -->
+                            <Column><Text  text="VIT"></Text>
+                            </Column>
+                            <!-- Empates -->
+                            <Column><Text  text="E"></Text>
+                            </Column>
+                            <!-- Derrotas -->
+                            <Column><Text  text="DER"></Text>
+                            </Column>
+                            <!-- Gols marcados -->
+                            <Column><Text  text="GM"></Text>
+                            </Column>
+                            <!-- Gols contra -->
+                            <Column><Text  text="GC"></Text>
+                            </Column>
+                            <!-- Saldo de gols -->
+                            <Column><Text  text="SG"></Text>
+                            </Column>
+
                         </columns>
                         <!-- Linhas da tabela-->
                         <ColumnListItem >
@@ -36,12 +62,54 @@
                                 <!-- Escudo -->
                                 <Image 
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Botafogo_de_Futebol_e_Regatas_logo.svg/1200px-Botafogo_de_Futebol_e_Regatas_logo.svg.png"
-                            width="5%"
+                            width="25%"
                             ></Image>
+                            <Text text="Botafogo"></Text>
+                            <!-- Pontos -->    
+                            <Text text="24"></Text>
+                            <!-- Partidas jogadas -->
+                            <Text text="10"></Text>
+                            <!-- Vitórias -->
+                            <Text text="8"></Text>
+                            <!-- Empates -->
+                            <Text text="0"></Text>
+                            <!-- Derrotas -->
+                            <Text text="2"></Text>
+                            <!-- GM -->
+                            <Text text="18"></Text>
+                            <!-- GC -->
+                            <Text text="7"></Text>
+                            <!-- SG -->
+                            <Text text="11"></Text>
+                        </cells>
+                    </ColumnListItem >
+                    <ColumnListItem >
+                        <cells>
                             <!-- 1o coluna - posicao-->
+                            <Text text="2"></Text>
+                            <!-- Escudo -->
+                            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png"
+                                        width="25%"
+                                    ></Image>
+                            <Text text="Palmeiras"></Text>
+                            <!-- Pontos -->    
+                            <Text text="19"></Text>
+                            <!-- Partidas jogadas -->
                             <Text text="9"></Text>
-                            </cells>
-                        </ColumnListItem >        
+                            <!-- Vitórias -->
+                            <Text text="5"></Text>
+                            <!-- Empates -->
+                            <Text text="4"></Text>
+                            <!-- Derrotas -->
+                            <Text text="0"></Text>
+                            <!-- GM -->
+                            <Text text="20"></Text>
+                            <!-- GC -->
+                            <Text text="8"></Text>
+                            <!-- SG -->
+                            <Text text="12"></Text>
+                        </cells>
+                    </ColumnListItem >        
                     </Table>    
                 </IconTabFilter>
                 <IconTabFilter   text="Partidas" 
