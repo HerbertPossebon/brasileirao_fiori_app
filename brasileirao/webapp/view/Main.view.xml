@@ -109,6 +109,60 @@
                             <!-- SG -->
                             <Text text="12"></Text>
                         </cells>
+                    </ColumnListItem >
+                    <ColumnListItem >
+                        <cells>
+                            <!-- 1o coluna - posicao-->
+                            <Text text="3"></Text>
+                            <!-- Escudo -->
+                            <Image src="https://logodownload.org/wp-content/uploads/2016/09/flamengo-logo-escudo-novo-1.png"
+                                        width="25%"
+                                    ></Image>
+                            <Text text="Flamengo"></Text>
+                            <!-- Pontos -->    
+                            <Text text="19"></Text>
+                            <!-- Partidas jogadas -->
+                            <Text text="9"></Text>
+                            <!-- Vitórias -->
+                            <Text text="5"></Text>
+                            <!-- Empates -->
+                            <Text text="4"></Text>
+                            <!-- Derrotas -->
+                            <Text text="0"></Text>
+                            <!-- GM -->
+                            <Text text="20"></Text>
+                            <!-- GC -->
+                            <Text text="8"></Text>
+                            <!-- SG -->
+                            <Text text="12"></Text>
+                        </cells>
+                    </ColumnListItem >
+                    <ColumnListItem >
+                        <cells>
+                            <!-- 1o coluna - posicao-->
+                            <Text text="4"></Text>
+                            <!-- Escudo -->
+                            <Image src="https://logodownload.org/wp-content/uploads/2017/02/cruzeiro-logo-escudo-.png"
+                                        width="25%"
+                                    ></Image>
+                            <Text text="Cruzeiro"></Text>
+                            <!-- Pontos -->    
+                            <Text text="19"></Text>
+                            <!-- Partidas jogadas -->
+                            <Text text="9"></Text>
+                            <!-- Vitórias -->
+                            <Text text="5"></Text>
+                            <!-- Empates -->
+                            <Text text="4"></Text>
+                            <!-- Derrotas -->
+                            <Text text="0"></Text>
+                            <!-- GM -->
+                            <Text text="20"></Text>
+                            <!-- GC -->
+                            <Text text="8"></Text>
+                            <!-- SG -->
+                            <Text text="12"></Text>
+                        </cells>
                     </ColumnListItem >        
                     </Table>    
                 </IconTabFilter>
