@@ -166,6 +166,7 @@
                     </ColumnListItem >        
                     </Table>    
                 </IconTabFilter>
+                <!-- Segunda Tab na página -->
                 <IconTabFilter   text="Partidas" 
                             key="partidas"
                             icon="sap-icon://soccer">
@@ -174,16 +175,33 @@
                     <Table>
                         <columns>
                             <!-- Posicao -->
-                            <Column ><Text text="Posição"></Text>
+                            <Column ><Text text="Casa"></Text>
+                            </Column>
+                            <Column ><Text text="Visitante"></Text>
                             </Column>
                         </columns>
                         <!-- Linhas da tabela-->
+                         <ColumnListItem >
+                            <cells>
+                                <!-- 1o coluna - posicao-->
+                                <Text text="Palmeiras"></Text>
+                                <Text text="São Paulo"></Text>
+                            </cells>
+                        </ColumnListItem >       
                         <ColumnListItem >
                             <cells>
                                 <!-- 1o coluna - posicao-->
-                                <Text text="2"></Text>
+                                <Text text="Botafogo"></Text>
+                                <Text text="Flamengo"></Text>
                             </cells>
-                        </ColumnListItem >        
+                        </ColumnListItem >     
+                        <ColumnListItem >
+                            <cells>
+                                <!-- 1o coluna - posicao-->
+                                <Text text="Fluminense"></Text>
+                                <Text text="Corinthians"></Text>
+                            </cells>
+                        </ColumnListItem >
                     </Table>  
                 </IconTabFilter>
            </items>
