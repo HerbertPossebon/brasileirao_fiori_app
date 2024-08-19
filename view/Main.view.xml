@@ -1,0 +1,113 @@
+<!-- Data: 26/09/2023 
+Autor: Herbert Possebon
+Projeto: Live Crisitano Santos com a aplicação brasileirão 
+-->
+<mvc:View xmlns:table="sap.ui.table" controllerName="brasileirao.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- conteúdo da página -->
+        <content>
+            <ObjectHeader title="{ModeloDadosGerais>/nome_popular}"
+                number="{ModeloDadosGerais>/rodada_atual/rodada}"
+            numberUnit="Rodada">
+            </ObjectHeader>
+            <IconTabBar >
+                <items>
+                    <!--Aba Classificacao -->
+                    <IconTabFilter text="Classificação" icon="sap-icon://competitor" id="tabClassificacao">
+                        <Table id="tabelaClassificacao"
+                        items="{ModeloClassificacao>/Classificacao}">
+                            <columns>
+                                <!-- coluna 1 -->
+                                <Column >
+                                    <Text text="Posição"></Text>
+                                </Column>
+                                <!-- coluna 2 -->
+                                <Column >
+                                    <Text text="Escudo"></Text>
+                                </Column>
+                                <!-- coluna 3 -->
+                                <Column >
+                                    <Text text="Time"></Text>
+                                </Column>
+                                <!-- coluna 4 -->
+                                <Column >
+                                    <Text text="Pontos"></Text>
+                                </Column>
+                                <!-- coluna 5 -->
+                                <Column >
+                                    <Text text="Jogos"></Text>
+                                </Column>
+                                <!-- coluna 6 -->
+                                <Column >
+                                    <Text text="Vitórias"></Text>
+                                </Column>
+                                <!-- coluna 7 -->
+                                <Column >
+                                    <Text text="Empates"></Text>
+                                </Column>
+                                <!-- coluna 8 -->
+                                <Column >
+                                    <Text text="Derrotas"></Text>
+                                </Column>
+                                <!-- coluna 9 -->
+                                <Column >
+                                    <Text text="GP"></Text>
+                                </Column>
+                                <!-- coluna 10 -->
+                                <Column >
+                                    <Text text="GC"></Text>
+                                </Column>
+                                <!-- coluna 11 -->
+                                <Column >
+                                    <Text text="SG"></Text>
+                                </Column>
+                                 <!-- coluna 12 -->
+                                 <Column >
+                                    <Text text="Últimas 5 partidas"></Text>
+                                </Column>
+                                
+                            </columns>
+
+                            <items>
+                                <ColumnListItem >
+                                    <cells >
+                                        <!-- coluna 1-->
+                                        <Text text="{ModeloClassificacao>posicao}"></Text>
+                                        <!-- coluna 2-->
+                                        <Image src="{ModeloClassificacao>time/escudo}" width="50%"></Image>
+                                        <!-- coluna 3-->
+                                        <Text text="{ModeloClassificacao>time/nome_popular}"></Text>
+                                        <!-- coluna 4-->
+                                        <Text text="{ModeloClassificacao>pontos}"></Text>
+                                        <!-- coluna 5-->
+                                        <Text text="{ModeloClassificacao>jogos}"></Text>
+                                        <!-- coluna 6-->
+                                        <Text text="{ModeloClassificacao>vitorias}"></Text>
+                                        <!-- coluna 7-->
+                                        <Text text="{ModeloClassificacao>empates}"></Text>
+                                        <!-- coluna 8-->
+                                        <Text text="{ModeloClassificacao>derrotas}"></Text>
+                                        <!-- coluna 9-->
+                                        <Text text="{ModeloClassificacaogols_pro}"></Text>
+                                        <!-- coluna 10-->
+                                        <Text text="{ModeloClassificacao>gols_contra}"></Text>
+                                        <!-- coluna 11-->
+                                        <Text text="{ModeloClassificacao>saldo_gols}"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                               
+                            </items>
+                        </Table>
+                    </IconTabFilter>
+                    <!-- Aba Partidas-->
+                    <IconTabFilter text="Partidas" icon="sap-icon://soccer" id="tabPartidas">
+                        <core:Fragment fragmentName="brasileirao.view.partidas" type="XML" />
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>
